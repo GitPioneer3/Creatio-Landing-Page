@@ -46,6 +46,7 @@ var config = {
 */
 function createObject() {
     landing.createObjectFromLanding(config);
+    onSubmit="createObject(); return false"
 }
 /**
 * The function below inits landing page using URL parameters.
@@ -55,7 +56,7 @@ function initLanding() {
 }
 jQuery(document).ready(initLanding);
 </script>
-onSubmit="createObject(); return false"
+
   
   </body>
 </html>
