@@ -14,6 +14,7 @@
        <input type="text" name="Name">  
         <p>Enter your Email</p>  <br> 
        <input type="text" name="Email">
+       <input type="submit" value="Submit">
      </form>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://webtracking-v01.bpmonline.com/JS/track-cookies.js"></script>
@@ -54,7 +55,7 @@ function initLanding() {
 }
 jQuery(document).ready(initLanding);
 </script>
-
+onSubmit="createObject(); return false"
   
   </body>
 </html>
