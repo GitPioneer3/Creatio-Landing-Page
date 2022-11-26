@@ -1,21 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creatio landing Page</title>
-   
-
-</head>
-<body>
-    
-    <form>  
-        <p>Enter your Name</p>  <br>  
-       <input type="text" name="Name" id="name" required>  
-        <p>Enter your Email</p>  <br> 
-       <input type="text" name="Email" id="email" required>
-       <input type="submit" value="Submit" onclick=createObject()>
-     </form>
+  
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://webtracking-v01.bpmonline.com/JS/track-cookies.js"></script>
 <script src="https://webtracking-v01.bpmonline.com/JS/create-object.js"></script>
@@ -57,7 +43,14 @@ function initLanding() {
 }
 jQuery(document).ready(initLanding);
 </script>
-
-  
+    </head>
+<body> 
+    <form class="form"  name="landingform" onSubmit="createObject(); return false ">  
+        <p>Enter your Name</p>  <br>  
+       <input type="text" name="Name" id="name" required>  
+        <p>Enter your Email</p>  <br> 
+       <input type="text" name="Email" id="email" required>
+       <input type="submit"  form="landingform" value="Send Request" onclick="createObject()"/>
+     </form>    
   </body>
 </html>
